@@ -1,0 +1,480 @@
+@font-face {
+    font-family: "Bebas";
+    src: url("../font/bebasneue-webfont.otf");
+}
+
+body {
+    margin: 0px;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+a {
+    text-decoration: none;
+    transition: all ease .8s;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.btn {
+    border-radius: 0px !important;
+}
+
+/*
+    BOUNCE EFFECT
+*********************/
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+/*
+    MISC
+*********************/
+
+section {
+    height: auto;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    color: #52524E;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.title.header {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #F4806D;
+    line-height: 0.1em;
+    margin: 10px 0 50px; 
+    letter-spacing: 2px;
+}
+
+.title.header span {
+    background:#fff;
+    padding: 0 10px;
+}
+
+.amethyst {
+    color: #9B59B6;
+    padding: 0 !important;
+}
+
+.wisteria {
+    color: #8E44AD;
+    padding: 0 !important;
+}
+
+.brinkpink {
+    color: #F67280;
+    padding: 0 !important;
+}
+
+.skyblue {
+    color: #87cefa;
+    padding: 0 !important;
+}
+
+/*
+    FIRST SECTION
+*********************/
+
+section.first {
+    background-image: url('../img/header.png');
+    height: 750px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.title.first {
+    letter-spacing: 20px;
+}
+
+.title {
+    font-family: 'Bebas';
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #3c3c3c;
+}
+
+.text.first {
+    margin: 100px auto auto auto;
+    color: #ffffff;
+}
+
+.text.first > p {
+    color: #3c3c3c;
+    font-family: 'Bebas';
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 1.5px;
+    text-transform: lowercase;
+}
+
+.text.first > p > em {
+    font-style: normal;
+    color: #ffffff;
+}
+
+section.first .arrow {
+    position: absolute;
+    left: 48%;
+    border-radius: 50% !important;
+    transition: all 0.3s ease-in-out;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(105, 105, 105, 0.3);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(105, 105, 105, 0.3);
+    -o-box-shadow: 0px 1px 3px 0px rgba(105, 105, 105, 0.3);
+    box-shadow: 0px 1px 3px 0px rgba(105, 105, 105, 0.3);
+    bottom: -28px;
+    padding: 15px 18px;
+    font-size: 22px;
+    border: 0;
+    background-color: #A8D75D;
+    color: white;
+    z-index: 300;
+}
+
+/*
+    PROJECT SECTION
+*********************/
+
+ul.works {
+    display: flex;
+    padding: 0; margin: 0;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul.works li {
+    list-style: none;
+    padding: 0; margin: 0;
+    width: 33.3%;
+    transition: all ease .4s;
+    max-height:300px;
+}
+
+ul.works li img {
+    transition: all ease .3s;
+}
+
+ul.works li:hover img {
+    transform: scale(1.1);
+}
+
+.moreButton {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.moreButton a.btn {
+    display: inline-block;
+    margin: 100px auto 50px;
+    color: #F4806D;
+    border-color: #F4806D;
+    border-width: 2px;
+    font-weight: 500;
+}
+
+.moreButton a.btn:hover {
+    color: #fff;
+    background-color: #F4806D;
+}
+
+/*
+    ABOUT SECTION
+*********************/
+section.about {
+    background-color: #E9E9E5;
+}
+
+section.about .title.header span {
+    background-color: #E9E9E5;
+}
+
+section.about .about.description {
+    text-align: center;
+}
+
+section.about p {
+    text-align: left;
+    margin: 0 0 25px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*
+    SKILL SECTION
+*********************/
+.cardskill {
+    background-color: #F8F8F8;
+    transition: all ease .4s;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    margin: 0px auto;
+}
+
+.cardskill:hover {
+    box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+}
+
+.cardskill .card-image {
+    height: 200px;
+    overflow: hidden;
+    display: block;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.cardskill .card-image img {
+    width: 100%;
+}
+
+.cardskill h3 {
+    font-size: 20px;
+    line-height: 2.6rem;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.card-content p {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 14px;
+}
+
+/*
+    CONTACT SECTION
+*********************/
+
+section.contactme a {
+    text-decoration: none;
+    color: #F67280;
+}
+
+section.contactme a i {
+    color: #F67280;
+    display: block;
+    transition: all .4s ease;
+}
+
+section.contactme a p {
+    color: #52524E;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+section.contactme a:hover i {
+    margin-top: -10px;
+}
+
+/*
+        FOOTER
+*********************/
+footer {
+    background-color: #EE5A5A;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 20px 20px 5px 20px;
+}
+
+footer .left {
+    display: inline-block;
+    width: 50%;
+}
+
+footer .right {
+    display: inline-block;
+    width: 49.5%;
+    text-align: right;
+}
+
+footer .right ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+footer .right li {
+    margin-left: 30px;
+}
+
+footer .right li a {
+    color: #F1F6F5;
+    text-decoration: none;
+    transition: all ease .8s;
+    cursor: pointer;
+}
+
+
+/*
+    MEDIA QUERIES
+*********************/
+@media (max-width: 600px) {
+
+    /*
+       SECTION FIRST
+    *********************/
+    section.first {
+        height: 420px;
+    }
+    
+    section.first .arrow {
+        left: 46%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .title.first {
+        letter-spacing: 5px;
+    }
+
+    .text.first > p {
+        font-size: 15px;
+    }
+
+    /*
+       SECTION PROJECT
+    *********************/
+    ul.works {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        width: 80%;
+        flex-wrap: wrap;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul.works li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width:100%;
+    }
+
+    ul.works li img {
+        width: 100%;
+    }
+
+    /*
+       SECTION SKILL
+    *********************/
+    section.skill .col-md-4 {
+        margin-bottom: 30px;
+    }
+
+    /*
+        SECTION CONTACT
+    *********************/
+    section.contactme .col-md-4 {
+        margin-bottom: 30px;
+    }
+
+    /*
+            FOOTER
+    *********************/
+    footer .right, footer .left {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .right ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    /*
+       SECTION PROJECT
+    *********************/
+    ul.works li img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 568px) {
+    .title.first {
+        line-height: 20px;
+    }
+
+    .text.first p {
+        line-height: 20px;
+    }
+}
